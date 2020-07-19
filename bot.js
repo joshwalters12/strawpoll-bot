@@ -42,10 +42,14 @@ const createPoll = (answers, channelID) => {
                     resultString = resultString + '; ' + data.options[i] + ': ' + data.votes[i]
                 }
 
-                bot.sendMessage({
-                    to: channelID,
-                    message: resultString
-                })
+                try {
+                    bot.sendMessage({
+                        to: channelID,
+                        message: resultString
+                    })
+                } catch (e) {
+                    logger.error(e);
+                }
             })
 
 
