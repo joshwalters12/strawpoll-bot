@@ -1,0 +1,8 @@
+{
+    "name": "Poll",
+    "version": "1.0.0",
+    "description": "A poll bot",
+    "main": "bot.js",
+    "author": "d0odle",
+    "dependecies": {}
+}
